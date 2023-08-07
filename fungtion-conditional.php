@@ -25,17 +25,12 @@ Output: "Halo Abduh, Selamat Datang di Jabar Coding Camp!"
 // Code function di sini
 function greetings($name) {
     echo "Halo $name, Selamat Datang di Jabar Coding Camp!.<br>";
-  }
-  
+    }
+
+// Hapus komentar untuk menjalankan code!
   greetings("Bagas");
   greetings("Wahyu");
   greetings("Abdul");
-  
-
-// Hapus komentar untuk menjalankan code!
-// greetings("Bagas");
-// greetings("Wahyu");
-// greetings("Abdul");
 
 echo "<br>";
 
@@ -53,12 +48,17 @@ Output: ludba
 */
 
 // Code function di sini 
-
+function reverseString($kata) {
+  for ($y = strlen($kata) - 1; $y >= 0; $y--) {
+      echo $kata[$y];
+  }
+  echo "<br>";
+}
 
 // Hapus komentar di bawah ini untuk jalankan Code
-// reverseString("abduh");
-// reverseString("Bootcamp");
-// reverseString("We Are JCC Developers")
+reverseString("abduh");
+reverseString("Bootcamp");
+reverseString("We Are JCC Developers");
 
 echo "<br>";
 
