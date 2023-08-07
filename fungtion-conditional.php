@@ -109,7 +109,27 @@ Selain itu jika parameter integer lebih besar sama dengan 70 dan lebih kecil dar
 sama dengan 60 dan lebih kecil dari 70 maka akan mereturn string “Cukup” selain itu maka akan mereturn string “Kurang”
 */
 
+// Code function di sini
+function tentukan_nilai($nilai) {
+    if ($nilai >= 85 && $nilai <= 100) {
+        return "Sangat Baik";
+    } elseif ($nilai >= 70 && $nilai < 85) {
+        return "Baik";
+    } elseif ($nilai >= 60 && $nilai < 70) {
+        return "Cukup";
+    } else {
+        return "Kurang";
+    }
+}
 
+// Hapus komentar di bawah ini untuk jalankan code
+echo tentukan_nilai(98); //Sangat Baik
+echo "<br>";
+echo tentukan_nilai(76); //Baik
+echo "<br>";
+echo tentukan_nilai(67); //Cukup
+echo "<br>";
+echo tentukan_nilai(43); //Kurang
 
 
 ?>
